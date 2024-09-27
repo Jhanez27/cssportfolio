@@ -14,6 +14,10 @@
         scrollbar-width: none;
       }
     </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="output.css" />
     <link rel="icon" type="image/png" href="../images/logo.svg" /
   </head>
@@ -81,7 +85,7 @@
         <div
           class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div
-            class="flex flex-col text-white p-4 font-thin gap-2 text-sm border border-slate-500 bg-slate-500 bg-opacity-50 rounded items-start pl-20 sm:pl-10 md:max-w-[450px] md:items-start lg:ml-40">
+            class="flex flex-col text-white p-4 font-thin gap-2 text-sm border border-slate-500 bg-slate-500 bg-opacity-50 rounded-xl items-start pl-12 sm:pl-10 md:max-w-[450px] md:items-start lg:ml-40">
             <p class="font-semibold text-base">Personal Information</p>
             <p class="pt-4">Name: Rigen Bulawan Suringa</p>
             <p>Birthday: September 28, 1995</p>
@@ -92,15 +96,71 @@
             <p>Github: https://github.com/Jhanez27</p>
           </div>
           <div
-            class="flex flex-col max-w-[1440px] items-start text-sm p-4 border border-slate-500 bg-slate-500 bg-opacity-50 rounded lg:mr-48 text-white font-thin gap-2">
+            class="flex flex-col max-w-[1440px] items-start text-sm p-4 !pl-12 border border-slate-500 bg-slate-500 bg-opacity-50 rounded-xl lg:mr-44 text-white font-thin gap-2">
             <p class="font-semibold text-base">Skills and Expertise</p>
-            <p class="pt-4">Name: Rigen Bulawan Suringa</p>
-            <p>Birthday: September 28, 1995</p>
-            <p>College: Bachelor of Science in Computer Science</p>
-            <p>School: Visayas State University</p>
-            <p>Email: Rigensuringa@gmail.com</p>
-            <p>Phone Number: 09662313505</p>
-            <p>Github: https://github.com/Jhanez27</p>
+            <p class="pt-4">Front-End Technologies</p>
+            <div class="flex flex-row ml-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="html5-logo"
+                class="w-10 h-10 sm:w-8 sm:h-10 sm:ml-4" />
+
+              <img
+                src="../images/NuxtJS_Logo.png"
+                class="w-10 h-10 sm:w-16 sm:h-10 ml-10 sm:ml-4 rounded"
+                alt="nuxtJs-logo" />
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                class="w-10 h-10 sm:w-8 sm:h-10 ml-10 sm:ml-4"
+                alt="javascript-logo" />
+
+              <img
+                src="../images/tailwind-css-logo.png"
+                class="w-20 h-10 sm:w-16 sm:h-10 ml-10 sm:ml-4 rounded"
+                alt="tailwindcss-logo" />
+            </div>
+            <p class="pt-4">Back-End Technologies</p>
+            <div class="flex flex-row ml-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                class="w-10 h-10 sm:w-10 sm:h-12 ml-4"
+                alt="php-logo" />
+
+              <img
+                src="../images/jsp.png"
+                class="w-10 h-10 sm:w-10 sm:h-10 ml-4 mt-2 sm:mt-0 md:mt-0"
+                alt="jsp-logo" />
+
+              <img
+                src="../images/c-sharp.png"
+                class="w-10 h-10 mt-2 sm:mt-0 sm:w-10 sm:h-10 ml-4"
+                alt="csharp-logo" />
+            </div>
+            <p class="pt-4">Databases</p>
+            <div class="flex flex-row ml-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                class="w-10 h-10 sm:w-10 sm:h-10 ml-4"
+                alt="postgress-logo" />
+
+              <img
+                src="../images/mysql-logo.png"
+                class="w-14 h-10 rounded sm:w-12 sm:h-10 ml-4"
+                alt="mysql-logo" />
+            </div>
+            <p class="pt-4">Other Tools</p>
+            <div class="flex flex-row ml-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                class="w-10 h-10 sm:w-10 sm:h-10 ml-4"
+                alt="postgress-logo" />
+
+              <img
+                src="../images/google-api.png"
+                class="w-18 h-10 rounded sm:w-24 sm:h-10 ml-4"
+                alt="mysql-logo" />
+            </div>
           </div>
         </div>
         <div class="w-full max-w-[1440px] p-5 mx-auto">
@@ -149,7 +209,7 @@
               class="text-white font-medium font-xs sm:font-xs md:text-base italic">
               Tech Stack
             </h2>
-            <div class="w-full flex flex-cols mx-auto p-4 !pl-10 md:!pl-16">
+            <div class="w-full flex flex-cols mx-auto p-4 !pl-1 md:!pl-16">
               <img
                 alt="logo1"
                 src="../images/c-sharp.png"
