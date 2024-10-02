@@ -3,140 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>About Me</title>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/png" href="../images/logo.svg">
+    <link rel="icon" type="image/png" href="../images/logo.svg" /
   </head>
   <body>
     <div class="w-full">
+      <div
+        class="w-full flex flex-col items-center bg-cover bg-center bg-opacity-50"
+        style="background-image: url('../images/bg-photo.jpg')">
+        <div class="w-full max-w-[1440px] mx-auto">
+          <div
+            class="sm:w-full text-sm sm:text-sm md:text-base flex items-center justify-start sm:gap-5 mx-auto px-4 sm:px-32 text-white md:font-medium h-15 mt-0">
+            <div class="flex items-center justify-center w-10 my-8">
+              <a href="index.html"
+                ><img
+                  alt="logo"
+                  src="../images/logo.svg"
+                  class="w-8 h-8 sm:w-full sm:h-full sm:object-contain"
+              /></a>
+            </div>
+            <nav
+              class="flex flex-row items-center w-full justify-center my-8 text-nowrap">
+              <ul
+                class="flex space-x-3 list-none md:space-x-24 gap-6 sm:gap-4 ml-4">
+                <li class="hover:text-red-400">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="hover:text-red-400">
+                  <a href="resume.html">Resume</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-2 gap-2">
+          <div class="flex p-4 !pb-6 justify-end items-end">
+            <img
+              alt="image"
+              src="../images/main-pic.jpg"
+              class="rounded-full w-[160px] h-[140px] sm:w-[300px] sm:h-[280px]" />
+          </div>
+          <div class="text-orange justify-start !pt-16 p-4">
+            <p class="text-white">Hello I'm</p>
+            <h2 class="text-sm md:text-3xl font-semibold">
+              Rigen Bulawan Suringa
+            </h2>
+            <h2 class="text-base font-bold text-white text-nowrap md:text-5xl">
+              Front End
+            </h2>
+            <h2
+              class="text-base md:text-5xl font-bold text-white text-nowrap p-4 md:p-10 !pt-0">
+              Web Developer
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="bg-teal-100 p-4">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-center justify-center sm:justify-end">
+            <img
+              alt="image1"
+              src="../images/index-pic2.png"
+              class="w-full max-w-[390px] p-2 !pb-5 rounded object-center mt-5" />
+          </div>
+          <div
+            class="flex flex-col items-start text-sm max-w-[420px] p-4 sm:!pt-32 md:!pt-40">
+            <h5 class="text-red-400 text-sm font-bold">Discover</h5>
+            <h2 class="text-white underline text-xl font-bold">About Me</h2>
+            <p class="text-white font-thin font-xs mt-2">
+              Hello! I'm Rigen Suringa, a front end web developer.<br> I graduated
+              a vocational course in Information and communication technology.
+              Currently I'm a third student from the Visayas State University
+              (VSU) main campus,taking up Bachelor of Science in Computer
+              Science.
+            </p>
+          </div>
+        </div>
+        <div class="w-full max-w-[1440px] p-5 mx-auto">
+          <h1 class="text-orange font-bold font-xs sm:font-xs md:text-2xl">
+            More Information
+          </h1>
+        </div>
         <div
-          class="w-full flex flex-col items-center bg-cover bg-center bg-opacity-50"
-          style="background-image: url('../images/bg-photo.jpg')">
-            <div class="w-full max-w-[1440px] mx-auto`">
-              <header
-                class="sm:w-full text-sm sm:text-sm md:text-base flex items-center justify-start  sm:gap-5 mx-auto px-4  sm:px-32 text-white md:font-medium h-15 mt-0">
-                <div class="flex items-center justify-center w-10 my-8">
-                  <a href="index.html"
-                    ><img
-                      alt="logo"
-                      src="../images/logo.svg"
-                      class="w-8 h-8 sm:w-full sm:h-full sm:object-contain"
-                  /></a>
-                </div>
-                <nav class="flex flex-row items-center w-full justify-center my-8 text-nowrap">
-                  <ul class="flex space-x-3 list-none md:space-x-24 gap-6 sm:gap-4 ml-4">
-                    <li class="hover:text-red-400"><a href="index.html">Home</a></li>
-                    <li class="hover:text-red-400">
-                      <a href="aboutme.html">About Me</a>
-                    </li>
-                    <li class="hover:text-red-400"><a href="resume.html">Resume</a></li>
-                  </ul>
-                </nav>
-              </header>
-            </div>
-          <div class="w-full max-w-[1440px] mx-auto">
-            <div class="flex items-center flex-col p-4 [&&]:pb-20 ">
+          class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div
+            class="flex flex-col items-center text-white p-8 font-thin gap-2 text-sm border border-slate-500 bg-slate-500 bg-opacity-75 rounded-xl sm:pl-10 md:max-w-[450px] lg:ml-40 text-justify">
+            <p class="font-semibold text-base">Personal Information</p>
+            <p class="pt-4">Name: Rigen Bulawan Suringa</p>
+            <p>Birthday: September 28, 1995</p>
+            <p>College: BS in Computer Science</p>
+            <p>School: Visayas State University</p>
+            <p>Email: Rigensuringa@gmail.com</p>
+            <p>Phone Number: 09662313505</p>
+            <p>Github: https://github.com/Jhanez27</p>
+            <p>Languges: English, Tagalog, Bisaya</p>
+            <p class="italic font-semibold">Interest</p>
+            <ul class="list-disc gap-2 p-2">
+              <li>Accounting</li>
+              <li>Programming</li>
+              <li>History</li>
+              <li>Greek Mythology</li>
+              <li>Photography</li>
+              <li>Music</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col items-center text-sm p-8 border border-slate-500 bg-slate-500 bg-opacity-75 rounded-xl lg:mr-40 text-white font-thin gap-2">
+            <p class="font-semibold text-base">Skills and Expertise</p>
+            <p class="pt-4">Front-End Technologies</p>
+            <div class="flex flex-row">
               <img
-                alt="photo"
-                src="../images/main-pic.jpg"
-                class="rounded-full w-[160px] h-[140px] sm:w-[300px] sm:h-[280px]"/>
-              <h1 class="font-bold text-red-400 text-4xl mt-2">Rigen Suringa</h1>
-              <p class="text-white mt-2">Front End Web Developer</p>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="html5-logo"
+                class="w-10 h-10 sm:w-8" />
+
+              <img
+                src="../images/NuxtJS_Logo.png"
+                class="w-10 h-10 sm:w-16 ml-4 rounded"
+                alt="nuxtJs-logo" />
+
+              <img
+                src="../images/tailwind-logo.jpg"
+                class="w-16 h-10 ml-4 rounded"
+                alt="tailwindcss-logo" />
+            </div>
+            <p class="pt-4">Back-End Technologies</p>
+            <div class="flex flex-row ">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                class="w-10 h-10 sm:h-12"
+                alt="php-logo" />
+
+              <img
+                src="../images/jsp.png"
+                class="w-10 h-10 ml-4 mt-2 sm:mt-0 md:mt-0"
+                alt="jsp-logo" />
+
+              <img
+                src="../images/c-sharp.png"
+                class="w-10 h-10 mt-2 sm:mt-0 ml-4"
+                alt="csharp-logo" />
+            </div>
+            <p class="pt-4">Databases</p>
+            <div class="flex flex-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                class="w-10 h-10 sm:w-10 sm:h-10"
+                alt="postgress-logo" />
+
+              <img
+                src="../images/mysql-logo.png"
+                class="w-14 h-10 rounded sm:w-12 sm:h-10 ml-4"
+                alt="mysql-logo" />
+            </div>
+            <p class="pt-4">Other Tools</p>
+            <div class="flex flex-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                class="w-10 h-10 ml-4"
+                alt="postgress-logo" />
+
+              <img
+                src="../images/google-api.png"
+                class="w-18 h-10 rounded sm:w-24"
+                alt="mysql-logo" />
             </div>
           </div>
         </div>
-        <div class="bg-teal-100 h-full">
-          <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="flex items-center justify-center sm:justify-end">
-              <img
-                alt="image1"
-                src="../images/index-pic2.png"
-                class="w-full max-w-[390px] p-2 !pb-5 rounded object-center mt-5" />
-            </div>
-            <div
-              class="flex flex-col items-start text-sm max-w-[420px] p-4 sm:!pt-32 md:!pt-40">
-              <h5 class="text-red-400 text-sm font-bold">Discover</h5>
-              <h2 class="text-white underline text-xl font-bold">About Me</h2>
-              <p class="text-white font-thin font-xs mt-2">
-                Hello! I'm Rigen Suringa, a front end web developer.<br> I graduated
-                a vocational course in Information and communication technology.
-                Currently I'm a third student from the Visayas State University
-                (VSU) main campus,taking up Bachelor of Science in Computer
-                Science.
-              </p>
-            </div>
+        <div class="w-full max-w-[1440px] mx-auto flex bg-opacity-99">
+          <div class="p-5">
+            <h4 class="font-xs sm:font-xs md:font-base text-red-400 font-bold">
+              What I do
+            </h4>
+            <h1 class="text-white font-bold font-xs sm:font-xs md:text-2xl">
+              My Services
+            </h1>
           </div>
         </div>
-        <div class=" bg-teal-100">
-          <div class="w-full max-w-[1440px] mx-auto flex bg-opacity-99">
-            <div class="p-5">
-              <h4 class="font-xs sm:font-xs md:font-base text-red-400 font-bold">
-                What I do
-              </h4>
-              <h1 class="text-white font-bold font-xs sm:font-xs md:text-2xl">
-                My Services
-              </h1>
-            </div>
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 h-auto text-white font-thin p-4">
+          <div
+            class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
+            <img
+              alt="icon"
+              src="../images/web-dev-logo.png"
+              class="w-7 sm:w-7 md:w-10" />
+            <h3 class="font-semibold mt-2">Web Development</h3>
+            <p class="text-sm mt-2">
+              I specialize in front-end web development, creating fast and responsive websites using Nuxt, Tailwind CSS, HTML5, and JSP. I design intuitive user interfaces and ensure cross-device compatibility, delivering scalable and high-quality solutions tailored to each project's unique needs. My focus is on building efficient and visually appealing web experiences with modern technologies.
+            </p>
           </div>
+          <div
+            class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
+            <img
+              alt="icon"
+              src="../images/app-dev-logo.png"
+              class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
+            <h3 class="font-semibold mt-2">App Development</h3>
+            <p class="text-sm mt-2">
+              I specialize in application development, utilizing C# with the
+              .NET framework to build robust, scalable solutions. My experience
+              includes integrating APIs for secure authentication, ensuring that
+              applications meet high standards of security and performance. I am
+              dedicated to creating efficient, user-centric applications that
+              deliver seamless functionality and a smooth user experience,
+              tailored to meet the unique requirements of each project.
+            </p>
+          </div>
+          <div
+            class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
+            <img
+              alt="icon"
+              src="../images/documentation-logo.png"
+              class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
+            <h3 class="mt-2 font-semibold">Documentation</h3>
+            <p class="mt-2 text-sm">
+              I specialize in creating detailed project documentation, including use-case functionalities and capturing client requirements for their website. By thoroughly documenting each project's scope, features, and objectives, I ensure alignment with the client's vision. My focus is on providing clear, structured documentation that supports seamless development and helps deliver websites tailored to meet the client's unique needs.
+            </p>
+          </div>
+          <div
+            class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
+            <img
+              alt="icon"
+              src="../images/research-logo.png"
+              class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
+            <h3 class="mt-2 font-semibold">Research</h3>
+            <p class="mt-2 text-sm">
+              I conduct comprehensive research for each project, focusing on client needs, system requirements, and the latest technologies. This approach ensures that my solutions are well-informed, efficient, and aligned with industry standards. By thoroughly understanding project goals, I deliver websites that are not only functional but also tailored to meet the specific objectives and long-term vision of the client.
+            </p>
+          </div>
+        </div>
+        <div class="w-full max-w-[1440px] p-5 mx-auto">
+          <h1 class="text-orange font-bold font-xs sm:font-xs md:text-2xl">
+            Projects
+          </h1>
         </div>
         <div
-          class="bg-teal-100 w-full">
-          <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 h-auto text-white font-thin p-4">
-            <div
-              class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
+          class="w-full max-w-[1440px] grid grid-rows-1 sm:grid-rows-1 md:grid-rows-1 lg:grid-cols-2 mx-auto bg-opacity-99 p-4 border-slate-500 bg-slate-500 bg-opacity-50 rounded-2xl">
+          <div class="flex flex-col m-2 p-4 gap-2 h-auto text-sm md:text-xs">
+            <h1 class="text-white font-bold font-xs sm:font-xl md:text-xl">
+              TicketEase
+            </h1>
+            <h2
+              class="text-white font-medium font-xs sm:font-xs md:text-base italic">
+              Project Overview
+            </h2>
+            <p class="text-white font-xs sm:font-xs md:text-base font-thin">
+              TicketEase is a comprehensive desktop ticketing system tailored
+              for managing tickets related to ships and fast crafts. It features
+              an intuitive interface that allows users to navigate effortlessly
+              while efficiently handling ticket management for maritime
+              operations.
+            </p>
+            <h2
+              class="text-white font-medium font-xs sm:font-xs md:text-base italic">
+              Key Features
+            </h2>
+            <ul
+              class="text-white font-xs sm:font-xs md:text-base font-thin list-disc p-4">
+              <li>
+                Secure Authentication: Implements Google API for secure user
+                authentication, enhancing account protection and user trust.
+              </li>
+              <li>
+                Automated Notifications: Utilizes SMTP configuration to send
+                timely email notifications to customers regarding ticket status
+                and updates.
+              </li>
+              <li>
+                Data Management: A comprehensive database schema designed to
+                handle various ticketing needs while ensuring data integrity.
+              </li>
+            </ul>
+            <h2
+              class="text-white font-medium font-xs sm:font-xs md:text-base italic">
+              Documentation
+            </h2>
+            <a
+              href="https://github.com/Jhanez27/Booking"
+              class="text-white font-xs sm:font-xs md:text-base font-thin hover:text-orange pl-2"
+              >https://github.com/Jhanez27/Booking</a
+            >
+            <h2
+              class="text-white font-medium font-xs sm:font-xs md:text-base italic">
+              Tech Stack
+            </h2>
+            <div class="w-full flex flex-cols mx-auto p-4 !pl-1 md:!pl-16">
               <img
-                alt="icon"
-                src="../images/web-dev-logo.png"
-                class="w-7 sm:w-7 md:w-10" />
-              <h3 class="font-semibold mt-2">Web Development</h3>
-              <p class="text-sm mt-2">
-                I specialize in front-end web development, creating fast and responsive websites using Nuxt, Tailwind CSS, HTML5, and JSP. I design intuitive user interfaces and ensure cross-device compatibility, delivering scalable and high-quality solutions tailored to each project's unique needs. My focus is on building efficient and visually appealing web experiences with modern technologies.
-              </p>
+                alt="logo1"
+                src="../images/c-sharp.png"
+                class="w-7 h-7 md:w-10 md:h-10 mr-4" />
+              <img
+                alt="logo1"
+                src="../images/mysql-logo.png"
+                class="w-10 h-7 md:w-10 md:h-10 rounded" />
+              <img
+                alt="logo1"
+                src="../images/google-api.png"
+                class="w-20 h-7 md:w-20 md:h-10 rounded" />
+              <img
+                alt="logo1"
+                src="../images/vscode-logo.png"
+                class="w-10 h-7 md:w-12 md:h-10 rounded mr-4" />
+              <img
+                alt="logo1"
+                src="../images/Microsoft_.NET_logo.svg"
+                class="w-7 h-7 md:w-10 md:h-10 rounded" />
             </div>
-            <div
-              class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
-              <img
-                alt="icon"
-                src="../images/app-dev-logo.png"
-                class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
-              <h3 class="font-semibold mt-2">App Development</h3>
-              <p class="text-sm mt-2">
-                I specialize in application development, utilizing C# with the
-                .NET framework to build robust, scalable solutions. My experience
-                includes integrating APIs for secure authentication, ensuring that
-                applications meet high standards of security and performance. I am
-                dedicated to creating efficient, user-centric applications that
-                deliver seamless functionality and a smooth user experience,
-                tailored to meet the unique requirements of each project.
-              </p>
+          </div>
+          <div class="p-4 w-full mt-0 lg:mt-12">
+            <div class="relative max-w-[48rem] m-auto pb-12">
+              <div
+                class="flex aspect-video overflow-x-auto snap-x snap-mandatory shadow-2xl no-scrollbar"
+                style="scroll-behavior: smooth">
+                <img
+                  id="slide-1"
+                  alt="image1"
+                  src="../images/slider2.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+                <img
+                  id="slide-2"
+                  alt="image2"
+                  src="../images/slider3.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+                <img
+                  id="slide-3"
+                  alt="image3"
+                  src="../images/slider4.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+                <img
+                  id="slide-4"
+                  alt="image4"
+                  src="../images/slider5.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+                <img
+                  id="slide-5"
+                  alt="image5"
+                  src="../images/slider6.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+                <img
+                  id="slide-6"
+                  alt="image6"
+                  src="../images/slider7.png"
+                  class="flex-shrink-0 w-full snap-start object-cover" />
+              </div>
+              <div
+                class="flex gap-1 absolute bottom-5 left-[50%] translate-x-[-50%] z-[1]">
+                <a
+                  href="#slide-1"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+                <a
+                  href="#slide-2"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+                <a
+                  href="#slide-3"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+                <a
+                  href="#slide-4"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+                <a
+                  href="#slide-5"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+                <a
+                  href="#slide-6"
+                  class="w-[0.7rem] h-[0.7rem] rounded-xl bg-orange opacity-75 transition-opacity duration-300 ease-in hover:opacity-100"></a>
+              </div>
             </div>
-            <div
-              class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
-              <img
-                alt="icon"
-                src="../images/documentation-logo.png"
-                class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
-              <h3 class="mt-2 font-semibold">Documentation</h3>
-              <p class="mt-2 text-sm">
-                I specialize in creating detailed project documentation, including use-case functionalities and capturing client requirements for their website. By thoroughly documenting each project's scope, features, and objectives, I ensure alignment with the client's vision. My focus is on providing clear, structured documentation that supports seamless development and helps deliver websites tailored to meet the client's unique needs.
-              </p>
+          </div>
+        </div>
+        <div class="w-full max-w-[1440px] p-5 mx-auto">
+          <h1 class="text-orange font-bold font-xs sm:font-xs md:text-2xl">
+            Contact Me
+          </h1>
+        </div>
+        <div class="w-full max-w-[1440px] mx-auto flex items-center justify-center bg-slate-500 rounded-xl bg-opacity-50 p-2 md:p-8">
+          <div
+            class="w-full md:w-1/2 flex flex-col border-slate-500 bg-slate-500 bg-opacity-75 rounded-xl p-4 md:p-8 gap-2 text-white font-thin text-xs md:text-sm ">
+            <form method="get" id="message-form" class="flex flex-col gap-2 text-nowrap">
+            <div class="w-full flex gap-2">
+              <p>Full Name:</p>
+              <input
+                type="text"
+                class="rounded p-2 w-3/4 ml-7 text-black"
+                placeholder="Full Name" />
             </div>
-            <div
-              class="w-50 border border-slate-500 bg-slate-500 bg-opacity-50 rounded p-4">
-              <img
-                alt="icon"
-                src="../images/research-logo.png"
-                class="w-7 xs sm:w-7 sm:text-xs md:text-base" />
-              <h3 class="mt-2 font-semibold">Research</h3>
-              <p class="mt-2 text-sm">
-                I conduct comprehensive research for each project, focusing on client needs, system requirements, and the latest technologies. This approach ensures that my solutions are well-informed, efficient, and aligned with industry standards. By thoroughly understanding project goals, I deliver websites that are not only functional but also tailored to meet the specific objectives and long-term vision of the client.
-              </p>
+            <div class="w-full flex gap-2">
+              <p>Email Address:</p>
+              <input
+                type="text"
+                class="rounded p-2 w-3/4 text-black ml-1 md:ml-0"
+                placeholder="sample@gmail.com" />
+            </div>
+            <div class="w-full flex gap-2">
+              <p>Subject:</p>
+              <input
+                type="text"
+                class="rounded p-2 w-3/4 ml-10 text-black"
+                placeholder="Subject" />
+            </div>
+            <div class="w-full flex gap-2">
+              <p>Message:</p>
+              <textarea
+              class="rounded p-2 w-3/4 ml-8 h-32 text-black align-top" placeholder="Message"
+              ></textarea>
+              </div>
+            </form>
+              <div class="w-full flex gap-2 items-center justify-center mt-4">
+              <button type="submit" form="message-form" value="submit" class="flex items-center space-x-2 bg-orange rounded text-white p-4 hover:bg-stone-700 font-semibold">Send Message</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="bg-teal-100 w-full"></div>
       <div class="bg-teal-100 w-full">
-        <footer
+        <div
           class="w-full max-w-[1440px] flex flex-row p-4 items-center justify-center mx-auto">
           <a href="https://www.facebook.com/Ms.DownToEarth/"
             ><img alt="faceboook_logo" src="../images/facebook-logo.png"
@@ -152,7 +447,7 @@
           <a href="https://github.com/Jhanez27"
             ><img alt="github_logo" src="../images/github-logo.png"
           /></a>
-        </footer>
+        </div>
       </div>
     </div>
   </body>
