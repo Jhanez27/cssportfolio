@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         teal: "#115E59",
         "teal-100": "#173B45",
-        "orange" : "#F87171"
+        orange: "#F87171",
       },
     },
   },
